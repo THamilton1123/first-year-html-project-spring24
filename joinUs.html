@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Tim Hamilton
+    Date: 05/05/2024
+-->
+
+<html lang="en">
+    <head>
+        <title>Join Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="styleSheet" href="styleSheets/main.css">
+        <link rel="styleSheet" href="styleSheets/joinUs.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="h1MagicId">Magic</h1>
+            <h1>The Hobby</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                &bull;<a href="contactUs.html"> Contact Us</a>
+                &bull;<a href="joinUs.html"> Join Us</a>
+                &bull;<a href="myCollection.html"> My Collection</a>
+            </nav>
+        </header>
+
+        <main>
+            <p>So, fellow wizard, the prospect of great reward has enticed you to join us!</p>
+            <p id="fantasticParagraph">Fantastic!!</p>
+            <p>We look forward to your wondrous contributions with great anticipation!  Of course, we must observe some minor formalities first.</p>
+            <p>If you will, please, provide some necessary information about yourself then you can begin your journey with us in no time at all!</p>
+            <form name="joinUsForm" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <fieldset>
+                    <legend>Who are you?</legend>
+                    <label for="joinUsFirstName">First Name</label>
+                    <input type="text" id="joinUsFirstName" name="joinUsFirstName" placeholder="Fake" required>
+                    <label for="joinUsLastName">Last Name</label>
+                    <input type="text" id="joinUsLastName" name="joinUsLastName" placeholder="Name" required>
+                    <label for="joinUsDisplayName">Display Name</label>
+                    <input type="text" id="joinUsDisplayName" name="joinUsDisplayName" placeholder="FakeName123" required>
+                </fieldset>
+                <fieldset>
+                    <legend>When were you born?</legend>
+                    <label for="birthMonth">Month</label>
+                    <select id="birthMonth" name="birthMonth" required>
+                        <option value="">Month</option>
+                        <option value="jan">January</option>
+                        <option value="feb">February</option>
+                        <option value="mar">March</option>
+                        <option value="apr">April</option>
+                        <option value="may">May</option>
+                        <option value="jun">June</option>
+                        <option value="jul">July</option>
+                        <option value="aug">August</option>
+                        <option value="sep">September</option>
+                        <option value="oct">October</option>
+                        <option value="nov">November</option>
+                        <option value="dec">December</option>
+                    </select>
+                    <label for="birthDay">Day</label>
+                    <select id="birthDay" name="birthDay" required>
+                        <option value="">0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <label for="birthYear">Year</label>
+                    <input type="text" id="birthYear" name="birthYear" placeholder="YYYY" required>
+                </fieldset>
+                <fieldset>
+                    <legend>How will you log in?</legend>
+                    <label for="joinUsEmail">Email</label>
+                    <input type="text" id="joinUsEmail" name="joinUsEmail" placeholder="FakeName123@email.com" required>
+                    <label for="joinUsEmailConfirm">Confirm Email</label>
+                    <input type="text" id="joinUsEmailConfirm" name="joinUsEmailConfirm" placeholder="FakeName123@email.com" required>
+                    <label for="joinUsPassword">Password</label>
+                    <input type="password" id="joinUsPassword" name="joinUsPassword" placeholder="fakeName'sPassword" required>
+                    <label for="joinUsPasswordConfirm">Confirm Password</label>
+                    <input type="password" id="joinUsPasswordConfirm" name="joinUsPasswordConfirm" placeholder="fakeName'sPassword" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Any favorite card color(s)?</legend>
+                    <input class="colorCheckBoxes" type="checkbox" id="w" name="favoriteWhite" value="white">
+                    <label class="colorCheckBoxes" for="w">White</label>
+                    <input class="colorCheckBoxes" type="checkbox" id="u" name="favoriteBlue" value="blue">
+                    <label class="colorCheckBoxes" for="u">Blue</label>
+                    <input class="colorCheckBoxes" type="checkbox" id="b" name="favoriteBlack" value="black">
+                    <label class="colorCheckBoxes" for="b">Black</label>
+                    <input class="colorCheckBoxes" type="checkbox" id="r" name="favoriteRed" value="red">
+                    <label class="colorCheckBoxes" for="r">Red</label>
+                    <input class="colorCheckBoxes" type="checkbox" id="g" name="favoriteGreen" value="green">
+                    <label class="colorCheckBoxes" for="g">Green</label>
+                    <input class="colorCheckBoxes" type="checkbox" id="c" name="favoriteColorless" value="colorless">
+                    <label class="colorCheckBoxes" for="c">Colorless</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Favorite card type?</legend>
+                    <input class="cardTypeButtons" type="radio" id="artifact" value="artifact" name="favoriteCardType">
+                    <label class="cardTypeButtons" for="artifact">Artifact</label>
+                    <input class="cardTypeButtons" type="radio" id="creature" value="creature" name="favoriteCardType">
+                    <label class="cardTypeButtons" for="creature">Creature</label>
+                    <input class="cardTypeButtons" type="radio" id="enchantment" value="enchantment" name="favoriteCardType">
+                    <label class="cardTypeButtons" for="enchantment">Enchantment</label>
+                    <input class="cardTypeButtons" type="radio" id="instant" value="instant" name="favoriteCardType">
+                    <label class="cardTypeButtons" for="instant">Instant</label>
+                    <input class="cardTypeButtons" type="radio" id="planeswalker" value="planeswalker" name="favoriteCardType">
+                    <label class="cardTypeButtons" for="planeswalker">Planeswalker</label>
+                    <input class="cardTypeButtons" type="radio" id="sorcery" value="sorcery" name="favoriteCardType">
+                    <label class="cardTypeButtons" for="sorcery">Sorcery</label>
+                </fieldset>
+                <div id="buttonContainers">
+                    <br><br>
+                    <input type="submit" value="Enter" class="submit">
+                    <input type="reset" value="Clear" class="reset">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <address><i>Developed by: <a href="mailto:thamilton12@madisoncollege.edu">Tim Hamilton</a></i></address>
+        </footer>
+    </body>
+</html>

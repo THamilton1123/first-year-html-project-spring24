@@ -1,0 +1,20 @@
+/*
+    Author: Tim Hamilton
+    Date: 05/05/2024
+*/
+
+#fantasticParagraph {
+    font-size: 4vw;
+    margin: 1em auto 0;
+}
+
+.colorCheckBoxes, .cardTypeButtons {
+    display: inline-block;
+    width: 20%;
+    text-shadow: 1px 1px 1px black;
+}
+
+#birthYear {
+    display: inline-block;
+    width: 3em;
+}

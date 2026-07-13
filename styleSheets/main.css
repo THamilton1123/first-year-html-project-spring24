@@ -1,0 +1,131 @@
+/*
+    Author: Tim Hamilton
+    Date: 05/05/2024
+*/
+
+header {
+    background-image: url("../images/blackLeather.jpg");
+    background-size: 100%;
+    padding-bottom: 1em;
+    margin: 0;
+    box-shadow: 0 10px 1em;
+}
+
+#h1MagicId {
+    font-family: fondamento;
+    font-size: 10vw;
+    color: rgb(255, 51, 0);
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: fondamento;
+    font-size: 5vw;
+    color: rgb(255, 51, 0);
+    text-align: center;
+    text-shadow: 1px 1px 25px;
+}
+
+nav {
+    font-size: 3vw;
+    text-align: center;
+    color: antiquewhite;
+    font-family: fondamento;
+}
+
+a {
+    color: silver;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 5px 5px #000000;
+}
+a:hover {color: gold}
+a:visited {color: rgb(255, 51, 0);}
+
+body {
+    background-image: url("../images/greyStone.jpg");
+    margin: 0;
+    background-size: 100%;
+}
+
+main {
+    color: antiquewhite;
+    text-align: center;
+    text-shadow: 0 10px 5px #000000;
+    font-family: fondamento;
+    font-size: 2.5vw;
+}
+
+p {margin: 2em 2em 0;}
+
+form {
+    border: 10px solid rgb(255, 51, 0);
+    border-radius: 10px;
+    width: 50%;
+    margin: 2em auto;
+    padding: 25px;
+    box-shadow: 0 0 2em rgb(255, 51, 0);
+    font-size: 2.25vw;
+}
+
+fieldset {
+    box-shadow: 0 0 2em black;
+}
+
+legend {
+    font-weight: bold;
+    font-size: larger;
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+input[type="submit"], input[type="reset"] {
+    text-shadow: 0 0 15px;
+    border-radius: 7px;
+    padding: 8px;
+    font-family: fondamento;
+    font-weight: bold;
+    font-size: 4vw;
+    color: rgb(255, 51, 0);
+    background-color: rgba(192, 192, 192, 0);
+    box-shadow: 5px 5px 5px black;
+}
+
+div#buttonContainers {
+    text-align: center;
+}
+
+.submit {
+    margin-right: 4vw;
+    margin-bottom: 1vw;
+}
+
+.reset {
+    margin-left: 4vw;
+    margin-bottom: 1vw;
+}
+
+footer {
+    background-image: url("../images/sparks.jpg");
+    background-size: 100%;
+    color: antiquewhite;
+    text-align: right;
+    padding: 5px;
+    border-top: 1px solid rgb(255, 51, 0);
+    height: 25px;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 640px) {
+    #h1MagicId {
+        font-size: 7.5vw;
+    }
+    h1 {
+        font-size: 3.75vw;
+    }
+}

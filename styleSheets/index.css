@@ -1,0 +1,44 @@
+/*
+    Author: Tim Hamilton
+    Date: 05/05/2024
+*/
+
+#tooManyCards {
+    width: 20%;
+    float: right;
+    margin-left: 1em;
+}
+
+#workOnCollection {
+    width: 20%;
+    float: left;
+    margin-right: 1em;
+}
+
+#advancedSearching {
+    width: 15%;
+    float: right;
+    margin-left: 1em;
+}
+
+#statisticalInfo {
+    width: 20%;
+    float: left;
+    margin-right: 1em;
+}
+
+.imageRight {
+    clear: left;
+}
+
+.imageLeft {
+    clear: right;
+}
+
+#greeting {
+    font-size: 4vw;
+}
+
+main img {
+    box-shadow: 0 10px 1em #000000;
+}

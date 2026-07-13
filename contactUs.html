@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Tim Hamilton
+    Date: 05/05/2024
+-->
+
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="styleSheet" href="styleSheets/main.css">
+        <link rel="styleSheet" href="styleSheets/contactUs.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="h1MagicId">Magic</h1>
+            <h1>The Hobby</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                &bull;<a href="contactUs.html"> Contact Us</a>
+                &bull;<a href="joinUs.html"> Join Us</a>
+                &bull;<a href="myCollection.html"> My Collection</a>
+            </nav>
+        </header>
+
+        <main>
+            <p>Do you have a suggestion you'd like to share?  Or perhaps a misdeed to report?</p>
+            <p>Or, just maybe, you only wish to say hello, and extend your warmest compliments?</p>
+            <p>In any case, please feel free to contact us any time that you wish!</p>
+            <form name="contactUsForm" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <fieldset>
+                    <legend>By what name shall we refer to you?</legend>
+                    <label for="senderName">Name</label>
+                    <input type="text" id="senderName" name="contactUsSenderName">
+                </fieldset>
+                <fieldset>
+                    <legend>To whom do we respond?</legend>
+                    <label for="senderAddress">Email</label>
+                    <input type="text" id="senderAddress" name="contactUsSenderAddress">
+                </fieldset>
+                <fieldset>
+                    <legend>What are we discussing?</legend>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="contactUsSubject">
+                </fieldset>
+                <fieldset>
+                    <legend>What's on your mind?</legend>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="contactUsMessage"></textarea>
+                </fieldset>
+                <div id="buttonContainers">
+                    <br><br>
+                    <input type="submit" value="Enter" class="submit">
+                    <input type="reset" value="Clear" class="reset">
+                </div>
+            </form>
+            <p>Of course, there is only so much time any wizard can be expected to spend responding to corresponces.</p>
+            <table>
+                <tr>
+                    <th colspan="2">Hours of Operation</th>
+                </tr>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>8am - 4pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday and Sunday</td>
+                    <td>Closed</td>
+            </table>
+            <p>So please allow for some time and be patient while we do our best to respond to everyone!</p>
+        </main>
+
+        <footer>
+            <address><i>Developed by: <a href="mailto:thamilton12@madisoncollege.edu">Tim Hamilton</a></i></address>
+        </footer>
+    </body>
+</html>

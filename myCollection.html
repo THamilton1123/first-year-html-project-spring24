@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Tim Hamilton
+    Date: 05/05/2024
+-->
+
+<html lang="en">
+    <head>
+        <title>My Collection</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="styleSheet" href="styleSheets/main.css">
+        <link rel="styleSheet" href="styleSheets/myCollection.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="h1MagicId">Magic</h1>
+            <h1>The Hobby</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                &bull;<a href="contactUs.html"> Contact Us</a>
+                &bull;<a href="joinUs.html"> Join Us</a>
+                &bull;<a href="myCollection.html"> My Collection</a>
+            </nav>
+        </header>
+
+        <main>
+            <p>Here you can create, read, update and delete entries to your own personal collection of cards!</p>
+            <p>But don't worry about looking for a card you don't already possess.  You can query and peruse the Wizards' compendium in its entirety.</p>
+            <p>If you're unsure how to enter certain search criteria, this <a href="help.html">helpful tome</a> should dispell any confusion.</p>
+            <p>And, don't forget: if the provided resources still cannot answer your question, you can contact us any time!</p>
+            <form name="myCollectionForm" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <fieldset>
+                    <legend>Advanced Search</legend>
+
+                    <label for="inputSearchCardName">Name</label>
+                    <select class="andOrNot" id="andOrNotName" name="andOrNotName">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardName" name="inputSearchCardName">
+
+                    <label for="inputSearchCardRulesText">Rules Text</label>
+                    <select class="andOrNot" id="andOrNotRulesText" name="andOrNotRulesText">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardRulesText" name="inputSearchCardRulesText">
+
+                    <label for="inputSearchCardColor">Color</label>
+                    <select class="andOrNot" id="andOrNotColor" name="andOrNotColor">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardColor" name="inputSearchCardColor">
+
+                    <label for="inputSearchCardCmc">CMC</label>
+                    <select class="andOrNot" id="andOrNotCmc" name="andOrNotCmc">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardCmc" name="inputSearchCardCmc">
+
+                    <label for="inputSearchCardRarity">Rarity</label>
+                    <select class="andOrNot" id="andOrNotRarity" name="andOrNotRarity">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardRarity" name="inputSearchCardRarity">
+
+                    <label for="inputSearchCardType">Type</label>
+                    <select class="andOrNot" id="andOrNotType" name="andOrNotType">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardType" name="inputSearchCardType">
+
+                    <label for="inputSearchCardSubtype">Subtype</label>
+                    <select class="andOrNot" id="andOrNotSubtype" name="andOrNotSubtype">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardSubtype" name="inputSearchCardSubtype">
+
+                    <label for="inputSearchCardPower">Power</label>
+                    <select class="andOrNot" id="andOrNotPower" name="andOrNotPower">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardPower" name="inputSearchCardPower">
+
+                    <label for="inputSearchCardToughness">Toughness</label>
+                    <select class="andOrNot" id="andOrNotToughness" name="andOrNotToughness">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardToughness" name="inputSearchCardToughness">
+
+                    <label for="inputSearchCardExpansion">Expansion</label>
+                    <select class="andOrNot" id="andOrNotExpansion" name="andOrNotExpansion">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardExpansion" name="inputSearchCardExpansion">
+
+                    <label for="inputSearchCardBlock">Block</label>
+                    <select class="andOrNot" id="andOrNotBlock" name="andOrNotBlock">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardBlock" name="inputSearchCardBlock">
+
+                    <label for="inputSearchCardFormat">Format</label>
+                    <select class="andOrNot" id="andOrNotFormat" name="andOrNotFormat">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardFormat" name="inputSearchCardFormat">
+
+                    <label for="inputSearchCardArtist">Artist</label>
+                    <select class="andOrNot" id="andOrNotArtist" name="andOrNotArtist">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardArtist" name="inputSearchCardArtist">
+
+                    <label for="inputSearchCardFlavorText">Flavor Text</label>
+                    <select class="andOrNot" id="andOrNotFlavorText" name="andOrNotFlavorText">
+                        <option>and</option>
+                        <option>or</option>
+                        <option>not</option>
+                    </select>
+                    <input type="text" id="inputSearchCardFlavorText" name="inputSearchCardFlavorText">
+
+                    <div id="buttonContainers">
+                        <br><br>
+                        <input type="submit" value="Enter Into My Collection" id="myCollectionEntrySubmit">
+                        <br><br>
+                        <input type="submit" value="Search My Collection" id="myCollectionSearchSubmit">
+                        <br><br>
+                        <input type="submit" value="Search All Cards" id="mtgDatabaseSearchSubmit">
+                        <br><br>
+                        <input type="reset" value="Clear" id="myCollectionFormReset">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <address><i>Developed by: <a href="mailto:thamilton12@madisoncollege.edu">Tim Hamilton</a></i></address>
+        </footer>
+    </body>
+</html>
